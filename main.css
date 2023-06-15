@@ -208,9 +208,11 @@ h4 {
 .icon-google:before {
     background-image: url(../../images/v2/icon/google.svg)
 }
-
 .icon-lamp:before {
-    background-image: url(./img/lamp.svg)
+    background-image: url(../../images/v2/icon/lamp.svg);
+}
+.icon-lam:before {
+    background-image: url(./img/lam.svg)
 }
 
 .icon-ok:before {
@@ -938,6 +940,17 @@ label.lever input[type=checkbox]:checked+span:after {
     --icon_size: 44px;
     left: 16px
 }
+.mailing_left .lam {
+    margin-top: 40px;
+    padding: 16px 8px 16px 72px;
+    background-color: var(--light)
+}
+
+.mailing_left .lam:before {
+    --icon_size: 44px;
+    left: 16px
+}
+
 
 .mailing_form {
     width: 100%;
@@ -999,42 +1012,62 @@ label.lever input[type=checkbox]:checked+span:after {
     --btn_w: 172px;
     margin-top: 28px
 }
-
-.horisontal {
+/* ******************** firstpage  ********************* */
+.firstpage {
     padding: 80px 0 132px
 }
 
-.horisontal_left {
+.firstpage_left {
     max-width: 699px;
 }
-.horisontal_left img {
+.firstpage_left img {
     width: 134px;
     height: 50px;
     margin-bottom: 35px;
+}
+.firstpage_left p {
+    --color: var(--gray);
+    max-width: 428px;
+    font-size: var(--h5);
+    margin-top: 36px
+}
+.firstpage_left p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--black);
+  }
+.firstpage_left p+p {
+    margin-top: 1.1em
+}
+
+.firstpage_btn {
+    margin-top: 40px
+}
+.firstpage_img {
+    width: 479px;
+    height: 520px;
+    margin-top: 80px
+}
+/* *******************  horisontal     ***************** */
+.horisontal {
+    padding: 80px 0 132px;
+}
+.horisontal_left {
+    max-width: 600px;
 }
 .horisontal_left p {
     --color: var(--gray);
     max-width: 460px;
     font-size: var(--h5);
-    margin-top: 36px
+    margin-top: 36px;
 }
-.horisontal_left p:nth-of-type(1) {
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--black);
-  }
 .horisontal_left p+p {
-    margin-top: 1.1em
+    margin-top: 1.1em;
+}
+.horisontal_btn {
+    margin-top: 40px;
 }
 
-.horisontal_btn {
-    margin-top: 40px
-}
-.horisontal_img {
-    width: 479px;
-    height: 520px;
-    margin-top: 80px
-}
 
 
 .simple {
@@ -1298,55 +1331,97 @@ label.lever input[type=checkbox]:checked+span:after {
 .pricing_item_btn {
     margin-top: 24px
 }
-
+/* ******************** advantage ****************** */
 .advantage {
+    padding: 60px 0 112px;
+}
+.advantage_left {
+    margin-right: 40px;
+}
+.advantage_left p {
+    --color: var(--gray);
+    max-width: 284px;
+    margin-top: 24px;
+    font-size: var(--h5);
+}
+.advantage_left .btn {
+    margin-top: 40px;
+}
+.advantage_items {
+    grid-gap: 32px;
+    max-width: 800px;
+}
+.advantage_item {
+    padding: 40px 24px 30px 30px;
+    height: 300px;
+    background-color: var(--white);
+}
+.advantage_item:nth-child(odd) {
+    transform: translate3d(0, 52px, 0);
+}
+.advantage_item_emoj {
+    --size: 36px;
+    width: var(--size);
+    height: var(--size);
+}
+.advantage_item h4 {
+    max-width: 240px;
+    margin-top: 32px;
+    font-size: calc(var(--h4) * 1.1);
+}
+.advantage_item p {
+    --color: var(--gray);
+    margin-top: 8px;
+}
+/* ********************   currentemail    ********************** */
+.currentemail {
     padding: 100px 0 112px;
     background: linear-gradient(to right, #406AF6 1.29%, #1A48E4 99.14%);
 }
 
-.advantage_net {
+.currentemail_net {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.advantage_left {
+.currentemail_left {
     margin-right: 40px
 }
-.advantage_left h2 {
+.currentemail_left h2 {
    color: var(--white);
 }
-.advantage_left p {
+.currentemail_left p {
     --color: var(--white);
     max-width: 284px;
     margin: 20px auto 60px;
     font-size: var(--h5)
 }
 
-.advantage_left .btn {
+.currentemail_left .btn {
     margin-top: 40px
 }
 
-.advantage_items-top {
+.currentemail_items-top {
    display: flex;
    gap: 30px;
 
 }
-.advantage_items-button {
+.currentemail_items-button {
     margin-top: 30px;
     display: flex;
     gap: 30px;
  
  }
-.advantage_item {   
+.currentemail_item {   
     max-width: 286px;
     padding: 25px 24px 0px 25px;
     height: 262px;
     background-color: var(--silver);
     border-radius: 10px;
 }
-.advantage_item-button {   
+.currentemail_item-button {   
     max-width: 386px;
     padding: 25px 24px 0px 25px;
     height: 262px;
@@ -1357,35 +1432,35 @@ label.lever input[type=checkbox]:checked+span:after {
     transform: translate3d(0, 52px, 0)
 } */
 
-.advantage_item_emoj {
-    --size: 36px;
+.currentemail_item_emoj {
+    --size: 40px;
     width: var(--size);
     height: var(--size)
 }
 
-.advantage_item h4 {
+.currentemail_item h4 {
     max-width: 240px;
     margin-top: 15px;
     font-size: calc(var(--h4) * 1.1)
 }
 
-.advantage_item p {
+.currentemail_item p {
     --color: var(--gray);
     margin-top: 8px
 }
-.advantage_item-button h4 {
+.currentemail_item-button h4 {
     max-width: 240px;
     margin-top: 15px;
     font-size: calc(var(--h4) * 1.1)
 }
 
-.advantage_item-button p {
+.currentemail_item-button p {
     --color: var(--gray);
     margin-top: 8px
 }
            /* ***********    progress ************** */
 .progress {
-    padding: 110px 0 60px
+    padding: 110px 0 60px;
 }
 .progress_net {
     position: relative;
@@ -1397,17 +1472,12 @@ label.lever input[type=checkbox]:checked+span:after {
 .progress-vec {
 position: absolute;
 left: 298px;
-top: 197px;
+top: 211px;
 width: 208px;
 }
 .progress_left {
     max-width: 747px;
 }
-/* .progress_left img {
-    width: 134px;
-    height: 50px;
-    margin-bottom: 35px;
-} */
 .progress_left h2 {
     font-size: 40px;
 }
@@ -1417,7 +1487,6 @@ width: 208px;
     font-size: var(--h5);
     margin-top: 16px
 }
-
 .progress_btn {
     margin-top: 30px
 }
@@ -1443,9 +1512,6 @@ width: 208px;
     justify-content: space-between;
     gap: 109px;  
 }
-.anonymous_left h2 {
-   
- }
 .anonymous_left p {
     color: #565658;
      max-width: 384px;
@@ -1461,11 +1527,6 @@ width: 208px;
     margin: 20px auto 60px;
     font-size: var(--h5);
 }
-.anonymous_center {
-
-}
-
-
 .anonymous_btn a {
     color: var(--blue) !important;
     display: inline-block;
@@ -1473,9 +1534,7 @@ width: 208px;
 .anonymous_btn a:hover {
     transform: scale(1.05);
     transition: all 0.2s ease-in; 
-     
-      
-    }
+}
 .anonymous_img {
     width: 621px;
 }
@@ -1503,12 +1562,6 @@ border-radius: 10px;
 .maintask_center h2 {
       color: var(--white);
 }
-/* .progress_left img {
-    width: 134px;
-    height: 50px;
-    margin-bottom: 35px;
-} */
-
 .maintask_cener p+p {
     --color: var(--blue);
     max-width: 460px;
@@ -1537,10 +1590,7 @@ margin-top: 25px;
     transition: all 0.2s ease-in; 
       
     }
-.btn:hover {
-        transform: scale(1.03);
-        transition: all 0.2s ease-in; 
-}    
+  
     
 .maintask-lef-vec {
     position: absolute;
@@ -2095,20 +2145,20 @@ h3.sign_title {
     .mailing_form {
         max-width: 424px
     }
-
     .advantage_item {
-        height: 300px;
+        height: 340px;
     }
+  
 }
 
 @media only screen and (max-width:1100px) {
     .header_nav {
         --inner_left: 20px
     }
-    .horisontal_img img{
+    .firstpage_img img{
         margin-top: 64px;
     }
-    .horisontal {
+    .firstpage {
         padding: 10px 0 20px;
     }
     .footer_net {
@@ -2124,7 +2174,7 @@ h3.sign_title {
         left: -39px;
         top: 63px;
     }
-    .advantage_item {
+    .currentemail_item {
      max-width: 250px;
     }
 }
@@ -2149,17 +2199,19 @@ h3.sign_title {
     .mailing_form {
         max-width: 524px
     }
-
-    .advantage_net {
+    .firstpage_img img {
+        margin-top: 64px;
+    }
+    .currentemail_net {
         flex-direction: column
     }
 
-    .advantage_left {
+    .currentemail_left {
         margin-right: 0;
         margin-bottom: 40px;
         text-align: center
     }
-    .advantage_item {
+    .currentemail_item {
         height: 300px;
         /* max-height: 306px; */
         max-width: 221px;
@@ -2170,8 +2222,16 @@ h3.sign_title {
     .maintask-lef-vec {
        display: none;
     }
-    .horisontal_img {
+    .firstpage_img {
         margin-top: 0;
+    }
+    .advantage_net {
+        flex-direction: column;
+    }
+    .advantage_left {
+        margin-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
     }
 }
 
