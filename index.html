@@ -42,7 +42,7 @@
              }
             }
             </script>
-<div class="conteiner">
+   <div class="conteiner">
     
      <div class="hero">
             
@@ -99,9 +99,9 @@
 
     </di>
 
-</div>
+   </div>
 
-<div class="howorks">
+   <div class="howorks">
             
     <div class="howorks__left">              
         <img src="./img/img2.png"   alt="foto">          
@@ -132,15 +132,104 @@
               
     
      
-</div>
+   </div>
 
-<div class="faqs">
+   <div class="faqs">
     <div class="faqs__content">
         <h2>FAQS</h2>
+
+        <div class="accordion__conteiner">
+            <!-- **************** FAQ Section 1 -->
+
+            <div class="accordion ">
+                <div class="accordion-conteiner">
+                    <div class="accordion-header new-title">
+                        How many people in a group? </div>
+                    <div class="accordion-icon">+</div>
+                </div>
+                <div class="accordion-body">
+                    <ul class="new-list">
+                        <li>
+                            Our groups is usually by 5 individuals. We’re trying to have 
+                        </li>
+                        <li>
+                            the same right gender diversity.
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="accordion">
+                <div class="accordion-conteiner">
+                    <div class="accordion-header new-title">
+                        How matching works? </div>
+                    <div class="accordion-icon">+</div>
+                </div>
+                <div class="accordion-body">
+                    <ul class="new-list">
+                        <li>ProxiedMail currently is fully owned by Oleksii Yatsenko, Ukrainian software developer and enterpreneur that currently lives in Porto</li>
+                        <li>Personally I'm have a history of being blocked without any questions by Facebook. They just blocked my 6 year old account in one moment.</li>
+                        <li>This, and Apple Hide My Email were my inspiration to create ProxiedMail.</li>
+                        <li>Using ProxiedMail for a long time I can't give my real email address anymore as it feels not right anymore. </li>
+                        <li>If you're interested you can read <a href="https://blog.proxiedmail.com/en/about" style="text-decoration: underline">About</a> ProxiedMail.</li>
+                        <li>I'm also inviting you to subscribe on my <a href="https://www.tiktok.com/@pan.oleksii" target="_blank" style="text-decoration: underline">TikTok</a>, <a href="https://twitter.com/yatsenkolesh" target="_blank" style="text-decoration: underline">Twitter</a>, <a href="https://instagram.com/pan.oleksii" target="_blank" style="text-decoration: underline">Instagram</a>.</li>
+
+
+                        <br>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-conteiner">
+                    <div class="accordion-header new-title">
+                        Is it dating? </div>
+                    <div class="accordion-icon">+</div>
+                </div>
+                <div class="accordion-body">
+                    <ul class="new-list">
+                        <li>
+                            Proxy-email or email alias is similar to <a href="https://en.wikipedia.org/wiki/Email_forwarding" target="_blank" style="text-decoration: underline">forward email</a> address: all emails sent to proxy-email will be forwarded to your inbox.
+                        </li>
+                        <li>
+                            You can generate unlimited amount of emails at @proxiedmail.com (like helloworld@proxiedmail.com) and all sent emails to the proxy address will be forwarded to your real email like a john@gmai.com.
+                        </li>
+                        <li>
+                            Additionally, you can turn off forwarding from this proxy-email or change the pair of proxy-email -&gt; real email address.
+                        </li>
+                        <br>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- **************** FAQ Section 2 -->
+            <script>
+        
+                const accordionIcons = document.querySelectorAll('.accordion-icon');
+
+                accordionIcons.forEach(icon => {
+                    icon.addEventListener('click', () => {
+                        const header = icon.parentNode;
+                        const body = header.nextElementSibling;
+                        header.classList.toggle('active');
+                        if (header.classList.contains('active')) {
+                            icon.textContent = "-";
+                            body.style.display = "block";
+                        } else {
+                            icon.textContent = "+";
+                            body.style.display = "none";
+                        }
+                    });
+                });
+            </script>
+            
         
 
-    </div>
-</div>
+        </div>
+     </div>
    
 
     
@@ -148,10 +237,23 @@
 
 
 
-
-   <script type="text/javascript">
+    </div>
+    <div class="footer">
+    <div class="footer__content">
+        <a href="#" class="howorks__right-content-footer-book">
+            <div>Book</div>
+            <img src="./img/arrow0.png" alt="">
+        </a> 
+        <a href="#" class="howorks__right-content-footer-sing">
+            <div>Sign up</div>
+            <img src="./img/arrowf.png" alt="">
+        </a> 
+        </div>
+    </div> 
+    <script type="text/javascript">
     auto();
-   </script>
+    </script>
+</div>
     </body>
 
     </html>

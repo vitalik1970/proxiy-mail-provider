@@ -182,4 +182,69 @@ height: 800px;
 
 .faqs__content {
     width: 680px;
+    margin: 100px 380px;
+}
+.faqs__content h2 {
+    color: #191919;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 100%; /* 56px */
+    letter-spacing: -1.12px;
+    margin-bottom: 38px;
+}
+.accordion {
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    color: #696f7c;
+}
+.accordion-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.new-title {
+    list-style-type: none;
+    padding: 18px 0;
+    font-weight: 700;
+    line-height: 150%;
+    color: #242527;
+}
+.new-list {
+    color: #403F3F;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%; /* 30px */ 
+    padding-bottom: 32px; 
+}
+.accordion-icon {
+    position: relative;
+    font-size: 24px;
+    height: 3vh;
+    transform: translateY(-50%);
+}
+.accordion-icon::before {
+    display: block;
+    top: -17px;
+    position: absolute;
+    right: 0px;
+    padding: 2px 40px 11vh 54vw;
+    content: "";
+    width: 10px;
+    height: 8px;
+}
+.accordion-body {
+    display: none;
+}
+li {
+    list-style-type: none;
+}
+.footer {
+    background: #191919; 
+}
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 20px 
 }
