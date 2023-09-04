@@ -1,259 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <title>Meetsometimes</title>
-        <link href="https://fonts.cdnfonts.com/css/neutral-face" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
- </head>
 
-    <body>
-        <script type="text/javascript">
-            all_images = new Array (
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Meetsometimes</title>
+    <link href="https://fonts.cdnfonts.com/css/neutral-face" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <script type="text/javascript">
+        all_images = new Array(
             "./img/img.png",
             "/img/img2.png",
             "/img/img1.png",
-          "/img/img3.png",
-          "/img/img4.png" );
-            let ImgNum = 0;
-            let  ImgLength = all_images.length - 1;
-            let delay = 2500;
-            let  lock = false;
-            let run;
-            
-            function chgImg(direction) {
-             if (document.images) {
-              ImgNum = ImgNum + direction;
-              if (ImgNum > ImgLength) { ImgNum = 0; }
-              if (ImgNum < 0) { ImgNum = ImgLength; }
-              document.slide_show.src = all_images[ImgNum];
-             }
+            "/img/img3.png",
+            "/img/img4.png");
+        let ImgNum = 0;
+        let ImgLength = all_images.length - 1;
+        let delay = 2500;
+        let lock = false;
+        let run;
+
+        function chgImg(direction) {
+            if (document.images) {
+                ImgNum = ImgNum + direction;
+                if (ImgNum > ImgLength) { ImgNum = 0; }
+                if (ImgNum < 0) { ImgNum = ImgLength; }
+                document.slide_show.src = all_images[ImgNum];
             }
-            
-            function auto() {
-             if (lock == true) {
-              lock = false;
-              window.clearInterval(run);
-             }
-             else if (lock == false) {
-              lock = true;
-              run = setInterval("chgImg(1)", delay);
-             }
+        }
+
+        function auto() {
+            if (lock == true) {
+                lock = false;
+                window.clearInterval(run);
             }
-            </script>
-   <div class="conteiner">
-    
-     <div class="hero">
-            
-      
+            else if (lock == false) {
+                lock = true;
+                run = setInterval("chgImg(1)", delay);
+            }
+        }
+    </script>
+
+    <div class="hero">
+
+
         <div class="hero__left">
-                  <div class="hero__left-content">
-                   <div class="hero__left-content-heder">
+            <div class="hero__left-content">
+                <div class="hero__left-content-heder">
                     <h1>MEETSOMETIMES</h1>
                     <p>BEST EVENING OF THE WEEK</p>
-                   </div> 
-                   <div class="hero__left-content-footer-text">
+                </div>
+                <div class="hero__left-content-footer-text">
                     We’re organising a dinners for strangers every Tuesday evening in Porto</div>
 
-                    <div class="hero__left-content-footer-tag">
-                        NEXT DINNER:  <span>24 AUG 2024</span>
-                      </div>  
-                 </div>
-                   
-        </div> 
-                  
-        <div class="hero__right">
-                    
-            <div colspan="3"><img src="./img/img1.png" name="slide_show"></div>
-                    
+                <div class="hero__left-content-footer-tag">
+                    NEXT DINNER: <span>24 AUG 2024</span>
+                </div>
+            </div>
+
         </div>
-         
+
+        <div class="hero__right">
+
+            <div colspan="3"><img class="slide" src="./img/img1.png" name="slide_show"></div>
+
+        </div>
+
     </div>
 
     <div class="benefits">
-       
-            <ul class="benefits__content">
-                <li>
-                    <img src="./img/ben1.png" alt="">
-                    <p>FIND NEW BEST<br> FRIENDS</p>
-                </li>
-                <li>
-                    <img src="./img/ben2.png" alt="">
-                    <p>SPENT TIME IN <br>GOOD COMPANY</p>
-                </li>
-                <li>
-                    <img src="./img/ben3.png" alt="">
-                    <p>BROADEN YOUR <br>HORIZONS</p>
-                </li>
-                <li>
-                    <img src="./img/ben4.png" alt="">
-                    <p>DISCOVER NEW<br> PLACES</p>
-                </li>
-                <li>
-                    <img src="./img/ben5.png" alt="">
-                    <p>LISTEN AND TALK</p>
-                </li>
-            </ul>
-       
 
-    </di>
-
-   </div>
-
-   <div class="howorks">
-            
-    <div class="howorks__left">              
-        <img src="./img/img2.png"   alt="foto">          
-   </div>
-    <div class="howorks__right">
-              <div class="howorks__right-content">
-               <div class="howorks__right-content-heder">
-                <h2>HOW IT WORKS</h2>
-                <ul class="howorks__right-content-heder-ul">
-                    <li><span>1.</span> out the form about yourself</li>
-                    <li><span>2.</span> Secure your booking (link)</li>
-                    <li><span>3.</span> We will notify you about the place and time on the day before</li>
-                    <li><span>4.</span> Come to the restaurant and take a seat</li>
-                </ul>
-               </div> 
-               <div class="howorks__right-content-footer">
-                <a href="#" class="howorks__right-content-footer-book">
-                    <div>Book</div>
-                    <img src="./img/arrow0.png" alt="">
-                </a> 
-                <a href="#" class="howorks__right-content-footer-sing">
-                    <div>Sign up</div>
-                    <img src="./img/arrowf.png" alt="">
-                </a> 
-                </div>   
-             </div>   
-    </div> 
-              
-    
-     
-   </div>
-
-   <div class="faqs">
-    <div class="faqs__content">
-        <h2>FAQS</h2>
-
-        <div class="accordion__conteiner">
-            <!-- **************** FAQ Section 1 -->
-
-            <div class="accordion ">
-                <div class="accordion-conteiner">
-                    <div class="accordion-header new-title">
-                        How many people in a group? </div>
-                    <div class="accordion-icon">+</div>
-                </div>
-                <div class="accordion-body">
-                    <ul class="new-list">
-                        <li>
-                            Our groups is usually by 5 individuals. We’re trying to have 
-                        </li>
-                        <li>
-                            the same right gender diversity.
-                        </li>
-                        
-
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="accordion">
-                <div class="accordion-conteiner">
-                    <div class="accordion-header new-title">
-                        How matching works? </div>
-                    <div class="accordion-icon">+</div>
-                </div>
-                <div class="accordion-body">
-                    <ul class="new-list">
-                        <li>ProxiedMail currently is fully owned by Oleksii Yatsenko, Ukrainian software developer and enterpreneur that currently lives in Porto</li>
-                        <li>Personally I'm have a history of being blocked without any questions by Facebook. They just blocked my 6 year old account in one moment.</li>
-                        <li>This, and Apple Hide My Email were my inspiration to create ProxiedMail.</li>
-                        <li>Using ProxiedMail for a long time I can't give my real email address anymore as it feels not right anymore. </li>
-                        <li>If you're interested you can read <a href="https://blog.proxiedmail.com/en/about" style="text-decoration: underline">About</a> ProxiedMail.</li>
-                        <li>I'm also inviting you to subscribe on my <a href="https://www.tiktok.com/@pan.oleksii" target="_blank" style="text-decoration: underline">TikTok</a>, <a href="https://twitter.com/yatsenkolesh" target="_blank" style="text-decoration: underline">Twitter</a>, <a href="https://instagram.com/pan.oleksii" target="_blank" style="text-decoration: underline">Instagram</a>.</li>
-
-
-                        <br>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="accordion">
-                <div class="accordion-conteiner">
-                    <div class="accordion-header new-title">
-                        Is it dating? </div>
-                    <div class="accordion-icon">+</div>
-                </div>
-                <div class="accordion-body">
-                    <ul class="new-list">
-                        <li>
-                            Proxy-email or email alias is similar to <a href="https://en.wikipedia.org/wiki/Email_forwarding" target="_blank" style="text-decoration: underline">forward email</a> address: all emails sent to proxy-email will be forwarded to your inbox.
-                        </li>
-                        <li>
-                            You can generate unlimited amount of emails at @proxiedmail.com (like helloworld@proxiedmail.com) and all sent emails to the proxy address will be forwarded to your real email like a john@gmai.com.
-                        </li>
-                        <li>
-                            Additionally, you can turn off forwarding from this proxy-email or change the pair of proxy-email -&gt; real email address.
-                        </li>
-                        <br>
-
-                    </ul>
-                </div>
-            </div>
-            <!-- **************** FAQ Section 2 -->
-            <script>
-        
-                const accordionIcons = document.querySelectorAll('.accordion-icon');
-
-                accordionIcons.forEach(icon => {
-                    icon.addEventListener('click', () => {
-                        const header = icon.parentNode;
-                        const body = header.nextElementSibling;
-                        header.classList.toggle('active');
-                        if (header.classList.contains('active')) {
-                            icon.textContent = "-";
-                            body.style.display = "block";
-                        } else {
-                            icon.textContent = "+";
-                            body.style.display = "none";
-                        }
-                    });
-                });
-            </script>
-            
-        
-
-        </div>
-     </div>
-   
-
-    
-  
-
-
+        <ul class="benefits__content">
+            <li>
+                <img src="./img/ben1.png" alt="">
+                <p>FIND NEW BEST FRIENDS</p>
+            </li>
+            <li>
+                <img src="./img/ben2.png" alt="">
+                <p>SPENT TIME IN GOOD COMPANY</p>
+            </li>
+            <li>
+                <img src="./img/ben3.png" alt="">
+                <p>BROADEN YOUR HORIZONS</p>
+            </li>
+            <li>
+                <img src="./img/ben4.png" alt="">
+                <p>DISCOVER NEW PLACES</p>
+            </li>
+            <li>
+                <img src="./img/ben5.png" alt="">
+                <p>LISTEN AND TALK</p>
+            </li>
+        </ul>
 
     </div>
-    <div class="footer">
-    <div class="footer__content">
-        <a href="#" class="howorks__right-content-footer-book">
-            <div>Book</div>
-            <img src="./img/arrow0.png" alt="">
-        </a> 
-        <a href="#" class="howorks__right-content-footer-sing">
-            <div>Sign up</div>
-            <img src="./img/arrowf.png" alt="">
-        </a> 
+
+    </div>
+
+    <div class="howorks">
+
+        <div class="howorks__left">
+            <img src="./img/img2.png" class="howorks-foto" alt="foto">
         </div>
-    </div> 
+        <div class="howorks__right">
+            <div class="howorks__right-content">
+                <div class="howorks__right-content-heder">
+                    <h2>HOW IT WORKS</h2>
+                    <ul class="howorks__right-content-heder-ul">
+                        <li><span>1.</span> out the form about yourself</li>
+                        <li><span>2.</span> Secure your booking (link)</li>
+                        <li><span>3.</span> We will notify you about the place and time on the day before</li>
+                        <li><span>4.</span> Come to the restaurant and take a seat</li>
+                    </ul>
+                </div>
+                <div class="howorks__right-content-footer">
+                    <a href="#" class="howorks__right-content-footer-book">
+                        <div>Book</div>
+                        <img src="./img/arrow0.png" alt="">
+                    </a>
+                    <a href="#" class="howorks__right-content-footer-sing">
+                        <div>Sign up</div>
+                        <img src="./img/arrowf.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="faqs">
+        <div class="faqs__content">
+            <h2>FAQS</h2>
+
+            <div class="accordion__conteiner">
+                <!-- **************** FAQ Section 1 -->
+
+                <div class="accordion ">
+                    <div class="accordion-conteiner">
+                        <div class="accordion-header new-title">
+                            How many people in a group? </div>
+                        <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#8E96F8" />
+                                <path d="M12 7V16.0137" stroke="white" stroke-width="2" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                                <path d="M7.67975 11.5069H16.3197" stroke="white" stroke-width="2"
+                                    stroke-linecap="square" stroke-linejoin="round" />
+                            </svg></div>
+                    </div>
+                    <div class="accordion-body">
+                        <ul class="new-list">
+                            <li>
+                                Our groups is usually by 5 individuals. We’re trying to have
+                            </li>
+                            <li>
+                                the same right gender diversity.
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="accordion">
+                    <div class="accordion-conteiner">
+                        <div class="accordion-header new-title">
+                            How matching works? </div>
+                        <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#8E96F8" />
+                                <path d="M12 7V16.0137" stroke="white" stroke-width="2" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                                <path d="M7.67975 11.5069H16.3197" stroke="white" stroke-width="2"
+                                    stroke-linecap="square" stroke-linejoin="round" />
+                            </svg></div>
+                    </div>
+                    <div class="accordion-body">
+                        <ul class="new-list">
+                            <li>We’re trying to match people by their interests, age and souls.</li>
+                            <li>It depends on how you have filled you form</li>
+
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-conteiner">
+                        <div class="accordion-header new-title">
+                            Is it dating? </div>
+                        <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="12" fill="#8E96F8" />
+                                <path d="M12 7V16.0137" stroke="white" stroke-width="2" stroke-linecap="square"
+                                    stroke-linejoin="round" />
+                                <path d="M7.67975 11.5069H16.3197" stroke="white" stroke-width="2"
+                                    stroke-linecap="square" stroke-linejoin="round" />
+                            </svg></div>
+                    </div>
+                    <div class="accordion-body">
+                        <ul class="new-list">
+                            <li>
+                                Absolutely not. We’re working the same as a friend who invites
+                            </li>
+                            <li>
+                                you to the company with people you don’t know yet.
+
+                            </li>
+                            <li>
+                                It might be a best people you ever met or just a good company
+                            </li>
+                            <li>
+                                for evening, but it absolutely worth it anyway.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- **************** FAQ Section 2 -->
+                <script>
+
+                    const accordionIcons = document.querySelectorAll('.accordion-icon');
+
+                    accordionIcons.forEach(icon => {
+                        icon.addEventListener('click', () => {
+                            const header = icon.parentNode;
+                            const body = header.nextElementSibling;
+                            header.classList.toggle('active');
+                            if (header.classList.contains('active')) {
+                                icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#8E96F8"/><path d="M7.67975 11.5069H16.3197" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/></svg>';
+                                body.style.display = "block";
+                            } else {
+                                icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#8E96F8"/><path d="M12 7V16.0137" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/><path d="M7.67975 11.5069H16.3197" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/></svg>';
+                                body.style.display = "none";
+                                body.style.display = "none";
+                            }
+                        });
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__content">
+            <a href="#" class="footer__content-book">
+                <div>Buy ticket</div>
+                <img src="./img/arrow0.png" alt="">
+            </a>
+            <a href="#" class="footer__content-sing">
+                <div>Contact us</div>
+                <img src="./img/whatsapp.png" alt="">
+            </a>
+        </div>
+    </div>
     <script type="text/javascript">
     auto();
     </script>
-</div>
-    </body>
+</body>
 
-    </html>
+</html>
